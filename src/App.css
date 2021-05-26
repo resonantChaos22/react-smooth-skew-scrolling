@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overscroll-behavior-y: none;
+}
+
+h2 {
+  text-align: center;
+  font-size: 8rem;
+  margin: 40px auto;
+}
+
+h2 .outline {
+  -webkit-text-stroke: 2px black;
+  -webkit-text-fill-color: white;
+}
+
+.App {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.App .scroll {
+  padding: 2vh 0;
+  pointer-events: none;
+}
+
+.App .img-container {
+  width: 700px;
+  height: 420px;
+  overflow: hidden;
+  position: relative;
+  margin: 400px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .img-container:nth-child(1) {
+  margin-top: 200px;
+}
+
+.App .img-container:last-child {
+  margin-bottom: 200px;
+}
+
+@media (max-width: 480px) {
+  .App .img-container {
+    width: 95%;
+  }
+}
+
+.App .img-container img {
+  width: 100%;
+  position: absolute;
+}
+/*# sourceMappingURL=App.css.map */
